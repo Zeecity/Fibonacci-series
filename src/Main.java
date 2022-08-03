@@ -5,47 +5,7 @@ import java.awt.*;
 
 public class Main
 {
-
-    public static String result(int score){
-        String res;
-        if(score >= 60 ){
-            res = "PASSED";
-        }else{
-            res = "FAILED";
-        }
-        return res;
-    }
-
-    public static void addNum(){
-        int num = 2;
-        for(int i = num+1; i <=100; i ++){
-            num = num + i;
-        }
-        System.out.println(num);
-    }
-
-    public static void primeNum(){
-        int i;
-        int count = 0;
-        int num =5;
-        int x = num / 2;
-
-        for ( i = 2; i <= x; i++)
-        {
-            if (num % i != 0)
-            {
-                System.out.println("is prime");
-                count = 1;
-                break;
-            }
-            if(count == 0){
-                System.out.println(num + " is prime");
-
-            }else{
-            System.out.println(num);
-            }
-        }
-    }
+          
     public static void series()throws NumberFormatException{
         JFrame myFrame = new JFrame("Fibonacci Series");
 
@@ -91,12 +51,6 @@ public class Main
 
     public static void main(String[] args)
     {
-
-        //addNum();
-        //System.out.println("\n");
-
-        //primeNum();
-        //System.out.println("\n");
 
         series();
     }
